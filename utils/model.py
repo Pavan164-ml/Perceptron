@@ -1,3 +1,5 @@
+import numpy as np
+print("This is perceptron class")
 class Perceptron:
   def __init__(self, eta, epochs):
     self.weights = np.random.randn(3) * 1e-4 # SMALL WEIGHT INIT
