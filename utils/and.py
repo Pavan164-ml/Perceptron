@@ -17,7 +17,7 @@ X,y = prepare_data(df)
 
 ETA = 0.3 # 0 and 1
 EPOCHS = 10
-
+    
 model = Perceptron(eta=ETA, epochs=EPOCHS)
 model.fit(X, y)
 
