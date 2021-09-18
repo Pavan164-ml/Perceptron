@@ -6,8 +6,15 @@ from matplotlib.colors import ListedColormap
 import os
 
 def prepare_data(df):
-  X = df.drop("y", axis=1)
+  """This function is used to prepare the the data 
 
+  Args:
+      df (dataframe): From raw sources
+  Returns:
+      [dataframe]: to build the model
+  """
+  X = df.drop("y", axis=1)
+  print("Preparing data for model...")
   y = df["y"]
 
   return X, y
