@@ -18,7 +18,7 @@ class Perceptron:
 
     X_with_bias = np.c_[self.X, -np.ones((len(self.X), 1))] # CONCATINATION
     print(f"X with bias: \n{X_with_bias}")
-
+    
     for epoch in range(self.epochs):
       print("--"*10)
       print(f"for epoch: {epoch}")

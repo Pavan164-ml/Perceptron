@@ -1,14 +1,9 @@
-from utils.model import Perceptron
-from utils.all_utils import prepare_data, save_model , save_plot
+from oneNeuron.perceptron import Perceptron
+
 import pandas as pd
 import numpy as np
 import logging
-
-logging_str = "[%(asctime)s:%(levelname)s:%(module)s] %(message)s"
-logging .basicConfig(level = logging.INFO(), format= logging_str)
-
-
-
+import
 
 AND = {
     "x1": [0,0,1,1],
@@ -30,5 +25,3 @@ model.fit(X, y)
 
 _ = model.total_loss()
 
-save_model(model,filename="and.model")
-save_plot(df,"and.png",model)
